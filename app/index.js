@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { Router } from 'react-router-dom';
 
-import store from 'app/config/store'
-import history from 'app/config/history'
+import store from './config/store'
+import history from './config/history'
 
-import App from 'app/App'
+import App from './App'
 
 ReactDOM.render(
     <Provider store={store}>
