@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import './bitto.css'
 import './checkbox.css'
+import './input.css'
 
 class SignUp extends React.Component {
     constructor() {
@@ -48,23 +50,32 @@ class SignUp extends React.Component {
                     Sign Up
                 </div>
                 <form className="bitto-form" onSubmit={(e)=>this.handleSubmitForm(e)}>
-                    <div className="form-group">
+                    <div className="bitto-form-group">
                         <label className="bitto-input-label" htmlFor="email">E-MAIL</label>
-                        <input className="bitto-input" type="text" name="email" placeholder="email@email.com" 
-                        value={this.state.email || ''}
-                        onChange={(e)=>this.handleInputChange(e)}/>
+                        <div className="inputWithIcon" id="email">
+                            <input type="text" name="email"
+                            value={this.state.email || ''}
+                            onChange={(e)=>this.handleInputChange(e)}/>
+                            <i className="material-icons" aria-hidden="true">email</i>
+                        </div>
                     </div>
-                    <div className="form-group">
-                        <label className="bitto-input-label" htmlFor="pwd">PASSWORD</label>
-                        <input className="bitto-input" name="password" type="password" 
-                        value={this.state.password || ''} id="password"
-                        onChange={(e)=>this.handleInputChange(e)}/>
+                    <div className="bitto-form-group">
+                        <label className="bitto-input-label" htmlFor="password">PASSWORD</label>
+                        <div className="inputWithIcon" id="password">
+                            <input type="password" name="password" 
+                            value={this.state.password || ''}
+                            onChange={(e)=>this.handleInputChange(e)}/>
+                            <i className="material-icons" aria-hidden="true">lock</i>
+                        </div>
                     </div>
-                    <div className="form-group">
+                    <div className="bitto-form-group">
                         <label className="bitto-input-label" htmlFor="confirmpassword">CONFIRM PASSWORD</label>
-                        <input className="bitto-input" name="confirmpassword" type="password" 
-                        value={this.state.confirmpassword || ''} id="confirmpassword"
-                        onChange={(e)=>this.handleInputChange(e)}/>
+                        <div className="inputWithIcon" id="confirmpassword">
+                            <input type="password" name="confirmpassword" 
+                            value={this.state.confirmpassword || ''}
+                            onChange={(e)=>this.handleInputChange(e)}/>
+                            <i className="material-icons" aria-hidden="true">lock</i>
+                        </div>
                     </div>
                     <div className="tnc-checkbox">
                         <input

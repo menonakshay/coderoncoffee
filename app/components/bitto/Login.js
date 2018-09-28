@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import './bitto.css'
 import './checkbox.css'
+import './input.css'
 
 class Login extends React.Component {
     constructor() {
@@ -14,6 +16,10 @@ class Login extends React.Component {
             password : '',
             checked : false
         }
+    }
+
+    componentDidMount(){
+
     }
 
     handleInputChange(event){
@@ -47,18 +53,33 @@ class Login extends React.Component {
                     Log In
                 </div>
                 <form className="bitto-form" onSubmit={(e)=>this.handleSubmitForm(e)}>
-                    <div className="form-group">
+                    <div className="bitto-form-group">
                         <label className="bitto-input-label" htmlFor="email">E-MAIL</label>
-                        <input className="bitto-input" type="text" name="email" placeholder="email@email.com" 
-                        value={this.state.email || ''}
-                        onChange={(e)=>this.handleInputChange(e)}/>
+                        <div className="inputWithIcon" id="email">
+                            <input type="text" name="email"
+                            value={this.state.email || ''}
+                            onChange={(e)=>this.handleInputChange(e)}/>
+                            <i className="material-icons" aria-hidden="true">email</i>
+                        </div>
                     </div>
-                    <div className="form-group">
-                        <label className="bitto-input-label" htmlFor="pwd">PASSWORD</label>
-                        <input className="bitto-input" name="password" type="password" 
-                        value={this.state.password || ''}
-                        onChange={(e)=>this.handleInputChange(e)}/>
-                    </div>  
+                    <div className="bitto-form-group">
+                        <label className="bitto-input-label" htmlFor="password">PASSWORD</label>
+                        <div className="inputWithIcon" id="password">
+                            <input type="password" name="password" 
+                            value={this.state.password || ''}
+                            onChange={(e)=>this.handleInputChange(e)}/>
+                            <i className="material-icons" aria-hidden="true">lock</i>
+                        </div>
+                    </div>
+                    {/* <div className="form-group">
+                        <label className="bitto-input-label" htmlFor="email2">E-MAIL</label>
+                        <div class="inputWithIcon" id="email2">
+                            <input type="text" name="email" placeholder="email@email.com" 
+                            value={this.state.email || ''}
+                            onChange={(e)=>this.handleInputChange(e)}/>
+                            <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+                    </div>*/}
                     <div className="bitto-option-wrap">
                         <div className="remember-me-checkbox pull-left">
                             <input
