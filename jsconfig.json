@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "app/*": ["./app/*"],
+            "actions/*": ["./app/redux/actions/*"],
+            "components/": ["./app/components/*"],
+            "config/*": ["./app/config/*"],
+            "containers/*": ["./app/containers/*"],
+            "hoc/*": ["./app/HOC/*"],
+            "reducers/*": ["./app/redux/reducers/*"],
+            "sagas/*": ["./app/redux/sagas/*"],
+            "utils/*": ["./app/utils/*"]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "platforms",
+        "plugins",
+        "res",
+        "www"
+    ]
+}

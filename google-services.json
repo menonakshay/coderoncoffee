@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "274590737624",
+    "firebase_url": "https://scholato-8ab63.firebaseio.com",
+    "project_id": "scholato-8ab63",
+    "storage_bucket": "scholato-8ab63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274590737624:android:c7011f58d1ccf23b",
+        "android_client_info": {
+          "package_name": "com.scholato.androidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274590737624-8gun6fmgsttvh8a94fb22fj6jivaummi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvjP7JB23n69Pa1B9dzR8fY0WmnBI2ZvE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

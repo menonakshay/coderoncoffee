@@ -1,0 +1,134 @@
+.bitto-container{
+    /* background-image: url(/dist/images/bitto-background.png);
+    background-size: cover; */
+}
+.bitto-wrapper{
+    width: 25%;
+    min-height: 100vh;
+    height: auto;
+    text-align: center;
+    font-family: 'Open Sans';
+    margin: 0px auto;
+}
+.bitto-logo{
+    text-align: center;
+    padding-top: 75px;
+}
+.bitto-logo img{
+    width: 130px;
+}
+.bitto-motto{
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(109, 110, 112);
+    padding-top: 20px;
+}
+.bitto-login-header{
+    font-size: 28px;
+    color: rgb(0, 108, 255);
+    padding: 15px;
+}
+.bitto-input-label{
+    float: left;
+    font-size : 12px;
+    color: #706D6D;
+    font-weight: 400;
+}
+.bitto-form{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.form-group:active{
+    background: black;
+}
+.bitto-input{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-bottom: 1px solid #706D6D;
+}
+.bitto-input:focus{
+    border:0;
+}
+.remember-me-checkbox{
+    font-size : 14px;
+    color : #706D6D;
+}
+.bitto-forgot-password{
+    font-size : 14px;
+    color : rgb(0, 108, 255); 
+    text-decoration : underline;
+}
+.bitto-signup{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #706D6D;
+    font-weight: 600;
+}
+.signup-link{
+    font-family : 'Myriad Pro';
+    font-size : 14px;
+    color : #006CFF !important;
+    text-decoration : underline !important;
+    cursor: pointer;
+}
+.tnc-checkbox{
+    font-size: 12px;
+    padding: 15px 0px;
+}
+.bitto-tos{
+    font-size: 12px;
+    color: rgb(0, 108, 255);
+    text-decoration: underline;
+}
+.bitto-terms{
+    font-size : 12px;
+    line-height : 14px;
+    color : rgb(112, 109, 109); 
+    text-align: left;
+}
+.bitto-terms-link{
+    color: rgb(0, 108, 255) !important;
+    text-decoration: underline !important;
+}
+.login-btn{
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 37px;
+    box-shadow: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,197,250,1)), to(rgba(0,121,246,1)));
+    background: -webkit-linear-gradient(top, rgba(0,197,250,1) 0%, rgba(0,121,246,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,197,250,1) 0%, rgba(0,121,246,1) 100%);
+    background: linear-gradient(180deg, rgba(0,197,250,1) 0%, rgba(0,121,246,1) 100%);
+}
+.bitto-option-wrap{
+    overflow: auto;
+    padding: 15px 0px;
+}
+.bitto-terms-wrap{
+    padding-bottom: 20px;
+}
+.bitto-button-wrap{
+    padding: 20px 0px;
+}
+
+@media only screen and (max-width: 766px) {
+    .bitto-wrapper{
+        width: 100%;
+    }
+    .bitto-form{
+        padding: 30px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .bitto-wrapper{
+        width: 50%;
+    }
+}

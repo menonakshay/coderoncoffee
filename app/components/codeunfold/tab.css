@@ -1,0 +1,31 @@
+.tab-container{
+    border: 1px solid black;
+    padding: 20px;
+}
+.state-box{
+    padding: 7px 20px;
+    border: 1px solid#01A981;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.state-box.active{
+    width: fit-content;
+    background:#01A981;
+    color: white;
+}
+.jurisdiction-selector{
+    float: right;
+    width: 40%;
+}
+.country-close{
+    color: black;
+    position: absolute;
+    top: 0;
+}
+.states-panel{
+
+}
