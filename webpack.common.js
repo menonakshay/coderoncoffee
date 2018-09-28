@@ -21,20 +21,10 @@ module.exports = {
 
     resolve: {
       extensions: ['.js', '.jsx', '.json'],
-      alias: {
-        ['~']: path.resolve(__dirname),
-        app: path.resolve(__dirname, 'app'),
-        css: path.resolve(__dirname, 'app/dist/css'),
-        js: path.resolve(__dirname, 'app/dist/js'),
-        actions: path.resolve(__dirname, 'app/redux/actions'),
-        components: path.resolve(__dirname, 'app/components'),
-        config: path.resolve(__dirname, 'app/config'),
-        containers: path.resolve(__dirname, 'app/containers'),
-        hoc: path.resolve(__dirname, 'app/hoc'),
-        reducers: path.resolve(__dirname, 'app/redux/reducers'),
-        sagas: path.resolve(__dirname, 'app/redux/sagas'),
-        utils: path.resolve(__dirname, 'app/utils'),
-      }
+      // alias: {
+      //   ['~']: path.resolve(__dirname),
+      //   app: path.resolve(__dirname, 'app')
+      // }
     },
 
     module: {

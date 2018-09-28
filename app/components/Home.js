@@ -1,0 +1,25 @@
+import React from 'react'
+import {Link} from 'react-router-dom'
+
+class Home extends React.Component {
+    constructor() {
+        super()
+    }
+  
+    render() {
+        return (
+            <div className="row">
+                <ul className="list-group">
+                    <li className="list-group-item">
+                        <Link to="/login" className="signup-link">Bitto Login</Link>
+                    </li>
+                    <li className="list-group-item">
+                        <Link to="/signup" className="signup-link">Bitto Sign Up</Link>
+                    </li>
+                </ul>
+            </div>
+        );
+    }
+}
+
+export default Home;
