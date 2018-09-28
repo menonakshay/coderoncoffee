@@ -76,7 +76,7 @@ class Login extends React.Component {
                     <div className="bitto-button-wrap">
                         <button type="submit" className="login-btn">LOG IN</button>
                     </div>
-                    <div className="bitto-signup">Dont have an account? <Link to="/signup" className="signup-link">Sign Up</Link></div>
+                    <div className="bitto-signup">Dont have an account? <Link to="/signup" className="bitto-link">Sign Up</Link></div>
                 </form>
             </div>    
             </div>
