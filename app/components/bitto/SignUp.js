@@ -56,7 +56,7 @@ class SignUp extends React.Component {
                             <input type="text" name="email"
                             value={this.state.email || ''}
                             onChange={(e)=>this.handleInputChange(e)}/>
-                            <i className="material-icons" aria-hidden="true">email</i>
+                            <i className="material-icons">email</i>
                         </div>
                     </div>
                     <div className="bitto-form-group">
@@ -65,7 +65,7 @@ class SignUp extends React.Component {
                             <input type="password" name="password" 
                             value={this.state.password || ''}
                             onChange={(e)=>this.handleInputChange(e)}/>
-                            <i className="material-icons" aria-hidden="true">lock</i>
+                            <i className="material-icons">lock_outline</i>
                         </div>
                     </div>
                     <div className="bitto-form-group">
@@ -74,7 +74,7 @@ class SignUp extends React.Component {
                             <input type="password" name="confirmpassword" 
                             value={this.state.confirmpassword || ''}
                             onChange={(e)=>this.handleInputChange(e)}/>
-                            <i className="material-icons" aria-hidden="true">lock</i>
+                            <i className="material-icons">lock_outline</i>
                         </div>
                     </div>
                     <div className="tnc-checkbox">

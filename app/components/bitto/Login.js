@@ -59,7 +59,7 @@ class Login extends React.Component {
                             <input type="text" name="email"
                             value={this.state.email || ''}
                             onChange={(e)=>this.handleInputChange(e)}/>
-                            <i className="material-icons" aria-hidden="true">email</i>
+                            <i className="material-icons">email</i>
                         </div>
                     </div>
                     <div className="bitto-form-group">
@@ -68,7 +68,7 @@ class Login extends React.Component {
                             <input type="password" name="password" 
                             value={this.state.password || ''}
                             onChange={(e)=>this.handleInputChange(e)}/>
-                            <i className="material-icons" aria-hidden="true">lock</i>
+                            <i className="material-icons">lock_outline</i>
                         </div>
                     </div>
                     {/* <div className="form-group">
@@ -77,7 +77,7 @@ class Login extends React.Component {
                             <input type="text" name="email" placeholder="email@email.com" 
                             value={this.state.email || ''}
                             onChange={(e)=>this.handleInputChange(e)}/>
-                            <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                            <i class="fa fa-envelope fa-lg fa-fw"></i>
                         </div>
                     </div>*/}
                     <div className="bitto-option-wrap">
