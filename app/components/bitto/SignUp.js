@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import './bitto.css'
-import './checkbox.css'
-import './input.css'
 
 class SignUp extends React.Component {
     constructor() {
@@ -79,11 +77,11 @@ class SignUp extends React.Component {
                     </div>
                     <div className="tnc-checkbox">
                         <input
-                                className="styled-checkbox" id="styled-checkbox" 
-                                type="checkbox"
-                                name="checked"
-                                checked={this.state.checked}
-                                onClick={(e) => this.handleChangeCheckbox(e)} />
+                            className="styled-checkbox" id="styled-checkbox" 
+                            type="checkbox"
+                            name="checked"
+                            checked={this.state.checked}
+                            onChange={(e) => this.handleChangeCheckbox(e)} />
                         <label htmlFor="styled-checkbox">I agree to Bittoexchange.com <a className="bitto-tos">Terms of Service</a></label>
                     </div>
                     <div className="bitto-terms-wrap">
@@ -98,9 +96,9 @@ class SignUp extends React.Component {
                         </p>
                     </div>
                     <div className="bitto-button-wrap">
-                        <button type="submit" className="login-btn">SIGN UP</button>
+                        <button type="submit" className="bitto-btn">SIGN UP</button>
                     </div>
-                    <div className="bitto-signup">Already have an account? <Link to="/login" className="bitto-link">Log In</Link></div>
+                    <div className="bitto-signup">Already have an account? <Link to="/" className="bitto-link">Log In</Link></div>
                 </form>
             </div>    
             </div>

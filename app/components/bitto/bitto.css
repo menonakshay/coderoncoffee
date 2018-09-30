@@ -38,26 +38,47 @@
 .bitto-form{
     padding-top: 10px;
 }
-.form-group:active{
-    background: black;
+.bitto-form-group{
+    margin-bottom: 15px;
 }
-.bitto-input{
-    width: 100%;
-    height: 30px;
-    border: 0;
-    border-bottom: 1px solid #706D6D;
+.bitto-form-group:focus-within label{
+    color: rgb(0, 108, 255);
 }
-.bitto-input:focus{
-    border:0;
+.bitto-option-wrap{
+    overflow: auto;
+    padding: 15px 0px;
 }
 .remember-me-checkbox{
     font-size : 14px;
     color : #706D6D;
+    float: left;
 }
 .bitto-forgot-password{
     font-size : 14px;
     color : rgb(0, 108, 255); 
     text-decoration : underline;
+    float: right;
+    cursor: pointer;
+}
+.bitto-button-wrap{
+    padding: 10px 0px;
+}
+.bitto-btn{
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 27px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,197,250,1)), to(rgba(0,121,246,1)));
+    background: -webkit-linear-gradient(top, rgba(0,197,250,1) 0%, rgba(0,121,246,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,197,250,1) 0%, rgba(0,121,246,1) 100%);
+    background: linear-gradient(180deg, rgba(0,197,250,1) 0%, rgba(0,121,246,1) 100%);
+}
+.bitto-btn:focus{
+    border: 0;
 }
 .bitto-signup{
     font-size: 15px;
@@ -87,39 +108,10 @@
 .bitto-terms-link{
     color: rgb(0, 108, 255) !important;
     text-decoration: underline !important;
-}
-.login-btn{
-    width: 100%;
-    border-radius: 25px;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    height: 27px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,197,250,1)), to(rgba(0,121,246,1)));
-    background: -webkit-linear-gradient(top, rgba(0,197,250,1) 0%, rgba(0,121,246,1) 100%);
-    background: -o-linear-gradient(top, rgba(0,197,250,1) 0%, rgba(0,121,246,1) 100%);
-    background: linear-gradient(180deg, rgba(0,197,250,1) 0%, rgba(0,121,246,1) 100%);
-}
-.login-btn:focus{
-    border: 0;
-}
-.bitto-option-wrap{
-    overflow: auto;
-    padding: 15px 0px;
+    cursor: pointer;
 }
 .bitto-terms-wrap{
     padding-bottom: 10px;
-}
-.bitto-button-wrap{
-    padding: 10px 0px;
-}
-.bitto-form-group{
-    margin-bottom: 15px;
-}
-.bitto-form-group:focus-within label{
-    color: rgb(0, 108, 255);
 }
 
 @media only screen and (max-width: 766px) {
@@ -151,3 +143,104 @@
         width: 50%;
     }
 }
+
+/* 
+INPUT FIELD
+*/
+.bitto-form-group .inputWithIcon input{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #706D6D;
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+  
+.bitto-form-group .inputWithIcon input:focus{
+    border-bottom: 1px solid rgb(0, 108, 255);
+}
+
+.bitto-form-group .inputWithIcon input{
+    padding-right:40px;
+}
+
+.bitto-form-group .inputWithIcon{
+    position:relative;
+}
+
+.bitto-form-group .inputWithIcon i{
+    position:absolute;
+    right:0;
+    top:9px;
+    padding:9px 8px;
+    color:#aaa;
+    transition:.3s;
+    font-size: 28px;
+}
+
+.bitto-form-group .inputWithIcon input:focus + i{
+    color:rgb(0, 108, 255);
+}
+
+.bitto-form-group .inputWithIcon.inputIconBg i{
+    background-color:#aaa;
+    color:#fff;
+    padding:9px 4px;
+    border-radius:4px 0 0 4px;
+}
+
+.bitto-form-group .inputWithIcon.inputIconBg input:focus + i{
+    color:#fff;
+    background-color:rgb(0, 108, 255);
+}
+
+/* 
+CHECKBOX
+*/
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+  }
+  .styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 400;
+    color: #706D6D;
+    font-size:13px;
+  }
+  .styled-checkbox + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid rgb(0, 108, 255);
+  }
+  .styled-checkbox:checked + label:before {
+    background: rgb(0, 108, 255);
+  }
+  .styled-checkbox:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+  .styled-checkbox:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+  .styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+  
