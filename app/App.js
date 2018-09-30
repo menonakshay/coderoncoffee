@@ -8,7 +8,7 @@ import {
   // withRouter
 } from "react-router-dom"
 import Home from './components/Home'
-// import Roby from './components/roby/Roby'
+import Roby from './components/roby/Roby'
 // import TabProject from './components/codeunfold/TabProject'
 // import Upload from './components/upload/Upload'
 import Login from './components/bitto/Login'
@@ -21,7 +21,7 @@ class App extends React.Component {
       return (
           <Switch>
                   <Route path="/" exact render={routeProps => <Home {...routeProps} {...this.props} />} />
-                  {/* <Route path ="/roby" render={routeProps => <Roby {...routeProps} {...this.props} />} /> */}
+                  <Route path ="/roby_login" render={routeProps => <Roby {...routeProps} {...this.props} />} />
                   {/* <Route path="/codeunfold" render={routeProps => <TabProject {...routeProps} {...this.props} />} /> */}
                   {/* <Route path="/upload" render={routeProps => <Upload {...routeProps} {...this.props} />} /> */}
                   <Route path="/bitto_login" render={routeProps => <Login {...routeProps} {...this.props} />} />
