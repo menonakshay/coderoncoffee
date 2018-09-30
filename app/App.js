@@ -24,10 +24,8 @@ class App extends React.Component {
                   {/* <Route path ="/roby" render={routeProps => <Roby {...routeProps} {...this.props} />} /> */}
                   {/* <Route path="/codeunfold" render={routeProps => <TabProject {...routeProps} {...this.props} />} /> */}
                   {/* <Route path="/upload" render={routeProps => <Upload {...routeProps} {...this.props} />} /> */}
-                  
-                  <Route path="/login" render={routeProps => <Login {...routeProps} {...this.props} />} />
-                  <Route path="/signup" render={routeProps => <SignUp {...routeProps} {...this.props} />} />
-                  {/* <PrivateRoute component={AppContainer} {...this.props} /> */}
+                  <Route path="/bitto_login" render={routeProps => <Login {...routeProps} {...this.props} />} />
+                  <Route path="/bitto_signup" render={routeProps => <SignUp {...routeProps} {...this.props} />} />
               
           </Switch>
       )
