@@ -13,7 +13,7 @@ import Roby from './components/roby/Roby'
 // import Upload from './components/upload/Upload'
 import Login from './components/bitto/Login'
 import SignUp from './components/bitto/SignUp'
-
+import DynamicForm from './components/dynamicform/DynamicForm'
 
 class App extends React.Component {
     
@@ -26,6 +26,7 @@ class App extends React.Component {
                   {/* <Route path="/upload" render={routeProps => <Upload {...routeProps} {...this.props} />} /> */}
                   <Route path="/bitto_login" render={routeProps => <Login {...routeProps} {...this.props} />} />
                   <Route path="/bitto_signup" render={routeProps => <SignUp {...routeProps} {...this.props} />} />
+                  <Route path="/dynamic_form" render={routeProps => <DynamicForm {...routeProps} {...this.props} />} />
               
           </Switch>
       )
